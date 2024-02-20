@@ -7,6 +7,7 @@ db.databaseConnect();
 const app=express();
 app.use(cors()); 
 
+
 app.options('*',cors());
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended:true}));
